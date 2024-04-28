@@ -295,7 +295,7 @@
                     </button>
 
                     <div id="users-accordion-child"
-                        class="hs-accordion-content w-full overflow-hidden transition-[height] duration-300 hidden">
+                        class="hs-accordion-content w-full overflow-hidden transition-[height] duration-300 hidden mt-2 space-y-2">
                         {{-- <ul class="hs-accordion-group ps-2 pt-2" data-hs-accordion-always-open>
                             <li class="hs-accordion" id="users-accordion-sub-1">
                                 <button type="button"
@@ -330,7 +330,7 @@
                                 </div>
                             </li>
                         </ul> --}}
-                        <ul class="ps-2 space-y-1">
+                        <ul class="ps-2 space-y-2">
                             <li>
                                 <x-nav-link-sub :href="route('dashboard')" :active="request()->routeIs('dashboard')">
                                     @lang('general.ViewAll')
@@ -373,8 +373,8 @@
                     </button>
 
                     <div id="projects-accordion-child"
-                        class="hs-accordion-content w-full overflow-hidden transition-[height] duration-300 hidden space-y-1">
-                        <ul class="ps-2 space-y-1">
+                        class="hs-accordion-content w-full overflow-hidden transition-[height] duration-300 hidden mt-2 space-y-2">
+                        <ul class="ps-2 space-y-2">
                             <li>
                                 <x-nav-link-sub :href="route('dashboard')" :active="request()->routeIs('dashboard')">
                                     @lang('general.ViewAll')
@@ -417,7 +417,7 @@
                     </button>
 
                     <div id="process-accordion-child"
-                        class="hs-accordion-content w-full overflow-hidden transition-[height] duration-300 hidden space-y-1">
+                        class="hs-accordion-content w-full overflow-hidden transition-[height] duration-300 hidden">
                         <ul class="hs-accordion-group ps-2 pt-2" data-hs-accordion-always-open>
                             <li class="hs-accordion" id="users-accordion-sub-1">
                                 <button type="button"
@@ -439,8 +439,8 @@
                                 </button>
 
                                 <div id="users-accordion-sub-1-child"
-                                    class="hs-accordion-content w-full overflow-hidden transition-[height] duration-300 hidden">
-                                    <ul class="ps-2 space-y-1">
+                                    class="hs-accordion-content w-full overflow-hidden transition-[height] duration-300 hidden mt-2 space-y-2">
+                                    <ul class="ps-2 space-y-2">
                                         <li>
                                             <x-nav-link-sub :href="route('dashboard')" :active="request()->routeIs('dashboard')">
                                                 @lang('general.ViewAll')
@@ -476,8 +476,8 @@
                                 </button>
 
                                 <div id="users-accordion-sub-1-child"
-                                    class="hs-accordion-content w-full overflow-hidden transition-[height] duration-300 hidden">
-                                    <ul class="ps-2 space-y-1">
+                                    class="hs-accordion-content w-full overflow-hidden transition-[height] duration-300 hidden mt-2 space-y-2">
+                                    <ul class="ps-2 space-y-2">
                                         <li>
                                             <x-nav-link-sub :href="route('dashboard')" :active="request()->routeIs('dashboard')">
                                                 @lang('general.ViewAll')
