@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Appointment;
 use App\Http\Requests\StoreAppointmentRequest;
 use App\Http\Requests\UpdateAppointmentRequest;
+use App\Models\Customer;
 
 class AppointmentController extends Controller
 {
@@ -13,7 +14,10 @@ class AppointmentController extends Controller
      */
     public function index()
     {
-        //
+        $appointments = Appointment::where('deleted', 0)
+            ->orderBy('updated_at')
+            ->get();
+        return view('backend.appointments.index', ['appointments' => $appointments]);
     }
 
     /**
@@ -45,7 +49,9 @@ class AppointmentController extends Controller
      */
     public function edit(Appointment $appointment)
     {
-        //
+        if ($appointment->deleted) return redirect()->back();
+        $customer = Customer::find($appointment->customer_id);
+        return view('backend.appointments.edit', ['appointment' => $appointment, 'customer' => $customer]);
     }
 
     /**

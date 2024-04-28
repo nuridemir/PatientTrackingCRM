@@ -332,12 +332,12 @@
                         </ul> --}}
                         <ul class="ps-2 space-y-2">
                             <li>
-                                <x-nav-link-sub :href="route('dashboard')" :active="request()->routeIs('dashboard')">
+                                <x-nav-link-sub :href="route('customers.index')" :active="request()->routeIs('customers.index')">
                                     @lang('general.ViewAll')
                                 </x-nav-link-sub>
                             </li>
                             <li>
-                                <x-nav-link-sub :href="route('login')" :active="request()->routeIs('login')">
+                                <x-nav-link-sub :href="route('customers.create')" :active="request()->routeIs('customers.create')">
                                     @lang('general.AddNew')
                                 </x-nav-link-sub>
                             </li>
@@ -376,12 +376,12 @@
                         class="hs-accordion-content w-full overflow-hidden transition-[height] duration-300 hidden mt-2 space-y-2">
                         <ul class="ps-2 space-y-2">
                             <li>
-                                <x-nav-link-sub :href="route('dashboard')" :active="request()->routeIs('dashboard')">
+                                <x-nav-link-sub :href="route('appointments.index')" :active="request()->routeIs('appointments.index')">
                                     @lang('general.ViewAll')
                                 </x-nav-link-sub>
                             </li>
                             <li>
-                                <x-nav-link-sub :href="route('login')" :active="request()->routeIs('login')">
+                                <x-nav-link-sub :href="route('appointments.create')" :active="request()->routeIs('appointments.create')">
                                     @lang('general.AddNew')
                                 </x-nav-link-sub>
                             </li>
