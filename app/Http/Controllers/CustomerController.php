@@ -41,7 +41,11 @@ class CustomerController extends Controller
      */
     public function show(Customer $customer)
     {
-        //
+        if ($customer->deleted) return redirect()->back();
+        $customerAppointments = Appointment::where('customer_id', $customer->id)
+            ->orderBy('updated_at')
+            ->get();
+        return view('backend.customers.show', ['customer' => $customer, 'customerAppointments' => $customerAppointments]);
     }
 
     /**
