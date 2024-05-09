@@ -1,3 +1,4 @@
+{{-- dont work --}}
 <script>
     // This code should be added to <head>.
     // It's used to prevent page load glitches.
