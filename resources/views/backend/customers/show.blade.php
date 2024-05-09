@@ -39,7 +39,7 @@
                     alt="Image Description">
             </div>
             <div class="col-span-7 mt-4 md:mt-0 flex flex-col gap-y-4">
-                <div class="flex flex-wrap gap-12">
+                <div class="flex flex-wrap gap-4 md:gap-12">
                     {{-- Full Name --}}
                     <div class="size-fit">
                         <p class="text-xs uppercase tracking-wide text-gray-500 dark:text-neutral-500">
@@ -85,7 +85,7 @@
                     </div>
                 </div>
 
-                <div class="flex gap-x-12">
+                <div class="flex flex-wrap gap-4 md:gap-12">
                     <div>
                         <p class="text-xs uppercase tracking-wide text-gray-500 dark:text-neutral-500">
                             @lang('general.relative')
