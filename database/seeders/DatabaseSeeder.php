@@ -23,6 +23,12 @@ class DatabaseSeeder extends Seeder
             'password' => 'admin'
         ]);
 
+        User::factory()->create([
+            'name' => 'Bilgehan Kilic',
+            'email' => 'admin1@admin',
+            'password' => 'admin1'
+        ]);
+
 
         $this->call([
             CustomerSeeder::class,
